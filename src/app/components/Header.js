@@ -26,8 +26,8 @@ const Header = () => {
         </div>
         <div>
           <ul className='flex gap-5'>
-            {Object.keys(menu).map(el=>{
-             return (<div className='text-white'><a href="">{menu[el]}</a> </div>)
+            {Object.keys(menu).map((el,index)=>{
+             return (<div className='text-white' key={index}><a href="">{menu[el]}</a> </div>)
               })}
           </ul>
         </div>
